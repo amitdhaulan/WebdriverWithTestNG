@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="testsuite">
+	<test name="testMethodA">
+		<groups>
+			<run>
+				<include name="A" />
+			</run>
+		</groups>
+		<classes>
+			<class name="parameters.testing.ParameterByITestContextInDataprovider" />
+		</classes>
+	</test>
+	<test name="testMethodB">
+		<groups>
+			<run>
+				<include name="B" />
+			</run>
+		</groups>
+		<classes>
+			<class name="parameters.testing.ParameterByITestContextInDataprovider" />
+		</classes>
+	</test>
+</suite>
